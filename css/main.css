@@ -26,40 +26,225 @@
     color: #fff;
     padding: 0 20px;
 }
-
-
-/*.--------MAIN----------------*/
-#main{
-    margin: 0 150px;
+/*===== BREAK POINT TO MENU =====*/
+@media (max-width:700px) {
+    .navbar{
+        display: none;
+    }
 }
-.main-container{
+
+
+/*----------DESTAQUES----------------*/
+.destaque{
+    margin: 0px 100px;
+    display: flex; 
+    justify-content: center;
     margin-top: 110px;
 }
-
-
-.destaque{
-    display: flex;
-}
-.left-side{
+.destaque .side-left{
     width: 60%;
 }
-.right-side{
-    width:40%
+.destaque 
+.side-left-card 
+img{
+    width: 100%;
 }
-.left-side .destaque-card img{
+.destaque 
+.sider-left-card-content{
+    line-height: 1.6em;
+}
+.destaque 
+.sider-left-card-content 
+h2{
+    margin-bottom: 28px;
+    margin-top: 10px;
+}
+/*---------*/
+.destaque 
+.side-right{
+    width: 500px;
+    margin-left: 15px;
+}
+.destaque 
+.side-right{
+    display: flex;
+    flex-direction: column;
+}
+.destaque 
+.side-right 
+.side-right-card img{
+    width: 180px;
+    max-height: 150px;
+}
+.destaque 
+.side-right 
+.side-right-card{
+    display: flex;
+    margin-bottom: 10px;
+}
+.destaque
+.side-right
+.sider-right-card-content{
+    margin-left: 10px;
+    line-height: 1.4em;
+}
+.destaque
+.side-right
+.sider-right-card-content h3{
+    margin-bottom: 20px;
+}
+/*======BREAK POINT DESTAQUES===*/
+@media (max-width:988px) {
+    .destaque{
+        margin: 0px 10px;
+    }
+    .destaque 
+    .sider-left-card-content{
+        padding: 0 10px;
+    }
+
+    .destaque
+    .side-right{
+    padding: 0 15px;
+}
+}
+@media (max-width:867px) {
+    .destaque{
+        flex-direction: column;
+    }
+    .destaque
+    .side-right{
+    margin-left: 0px;
+    }
+
+    .destaque .side-left{
+        width: 100%;
+    }
+    .destaque 
+    .side-right{
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 40px;
+    }
+}
+@media (max-width:424px) {
+
+    .destaque
+    .side-right
+    .sider-right-card-content h3{
+        font-size: 1.0em;
+        margin-bottom: 10px;
+    }
+    .destaque
+    .side-right
+    .sider-right-card-content {
+        line-height: 1.0em;
+    }
+    .destaque
+    .side-right
+    .sider-right-card-content p{
+        font-size: 0.80em;
+    }
+    .destaque 
+    .side-right 
+    .side-right-card img{
+    width: 150px;
+}
+}
+
+
+/*======SECTION TOP 10=======*/
+.section-top{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 100px;
+    background-color: #f6fdff;
+}
+.section-top
+.section-top-cards
+.top-card{
+    margin: 0 10px;
+}
+.section-top 
+.section-top-cards{
+    display: flex;
+}
+.section-top 
+.section-top-cards
+.top-card img{
     width: 100%;
     object-fit: cover;
 }
-
-.right-side{
+.section-top
+.section-top-header{
     display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+.section-top
+.section-top-header
+.top-header-title{
+    width: 130px;
+    font-size: 1.4em;
+}
+.section-top
+.section-top-header
+.line-top-header{
+    background-color: #000;
+    height: 2px;
+    width: 90%;
+}
+.section-top
+.section-top-cards
+.top-card-content{
+    line-height: 1.5em;
+}
+.section-top
+.section-top-cards
+.top-card-content h3{
+    margin-bottom: 20px;
+}
+/*=========BREAK POINT TOP 10========*/
+@media (max-width:988px) {
+    .section-top{
+        padding: 10px 10px;
+    }
+}
+@media (max-width:669px) {
+    .section-top 
+    .section-top-cards{
     flex-direction: column;
-    margin-left: 10px;
+    }
+
 }
-.right-side .destaque-card img{
-    width: 40%;
-}
-.right-side .destaque-card{
-    display: flex;
-    padding-bottom:10px;
+@media (max-width:470px) {
+    .section-top
+    .section-top-header{
+        flex-direction: column;
+        align-items: unset;
+        padding: 0 5px;
+    }
+    .section-top
+    .section-top-header
+    .line-top-header{
+     background-color: #000;
+     height: 2px;
+     width: 100%;
+    }
+
+    .section-top{
+        padding: 10px 0px;
+    }
+
+    .section-top
+    .section-top-cards
+    .top-card{
+    margin: 0 0px;
+    }
+
+    .section-top
+    .section-top-cards
+    .top-card-content{
+        padding: 5px 10px;
+    }
 }
